@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DewanSoftTask"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="850" FontSize="20" FontFamily="Georgia" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" x:Name="grid">
+        Title="MainWindow" Height="450" Width="800" FontSize="20" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" x:Name="grid">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

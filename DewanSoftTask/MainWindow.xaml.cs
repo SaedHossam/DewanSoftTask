@@ -71,7 +71,7 @@ namespace DewanSoftTask
                 Items.Add(item);
                 tbItemName.Text = tbQuantity.Text = tbPrice.Text = "";
                 Total += item.Total;
-                TotalPrice = Total + "";
+                TotalPrice = Total + "$";
 
             }
             else
@@ -111,13 +111,8 @@ namespace DewanSoftTask
             bool valid = !string.IsNullOrEmpty(customerName) && !string.IsNullOrEmpty(branchName) && !string.IsNullOrEmpty(date.ToString()) && Items.Count > 0;
             if (valid)
             {
-                var invoiceDate = dpDate.SelectedDate.Value.Date.ToShortDateString();
-                //List<Item> InvoiceItems = new List<Item>();
-                //foreach(var i in Items)
-                //{
-
-                //}
-                MessageBox.Show($"{customerName} {branchName} {invoiceDate}\n {valid}");
+                InvoiceDetails invoiceDetails = new InvoiceDetails();
+                invoiceDetails.ShowDialog();
             }
             else
             {
