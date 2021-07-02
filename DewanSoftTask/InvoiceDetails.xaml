@@ -41,7 +41,8 @@
 
         <Separator Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="6" Margin="0,10,0,0"/>
 
-        <DataGrid AutoGenerateColumns="True" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="4" Margin="50,10,0,0" x:Name="dgItems" Width="auto">
+        <!--<DataGrid AutoGenerateColumns="True" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="4" Margin="50,10,0,0" x:Name="dgItems" Width="auto">-->
+        <DataGrid AutoGenerateColumns="True" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="40,10,0,10" x:Name="dgItems" Width="auto" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center">
 
         </DataGrid>
 
